@@ -1,5 +1,6 @@
 "use strict";
 
+// Create a game character image array.
 const imageArray = [
   {
     id: 1,
@@ -135,9 +136,13 @@ const imageArray = [
   } 
 ];
 
+// Declare a variable for image tags
 let output ="";
+
+// Declare a variable for the Gallery HTML element.
 const gallery = document.querySelector(".gallery");
 
+// Loop to construct image elements.
 imageArray.forEach(function(charactor) {
 
   output += 
@@ -152,6 +157,7 @@ imageArray.forEach(function(charactor) {
 
 });
 
+// Update the HTML DOM model with the image tags. 
 gallery.innerHTML = output;
 
 
